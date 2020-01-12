@@ -16,6 +16,8 @@ kwin (4:5.17.5-0r1) UNRELEASED; urgency=medium
   * Drop the migration from kwin-dbg, no more needed after two Debian stable
     releases.
   * Remove breaks/replaces for versions older than oldstable.
+  * Pass -DBUILD_TESTING=OFF to cmake to disable the build of tests, as they
+    are not run at build time anyway.
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 12 Jan 2020 19:54:39 +0100
 
