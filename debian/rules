@@ -3,6 +3,9 @@
 
 export DEB_LDFLAGS_MAINT_APPEND := -Wl,--as-needed
 
+libpkgs_gen_strict_local_shlibs = $(libpkgs_all_packages) kwin-common
+include /usr/share/pkg-kde-tools/qt-kde-team/2/library-packages.mk
+
 %:
 	dh $@ --with kf5,pkgkde_symbolshelper --buildsystem kf5 --without build_stamp
 
@@ -12,3 +15,6 @@ override_dh_auto_configure:
 override_dh_auto_test:
 	# Disable auto tests at build time
 	:
+
+override_dh_gencontrol-arch: libpkgs_gen_strict_local_shlibs
+	dh_gencontrol -a

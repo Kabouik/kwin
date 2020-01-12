@@ -85,7 +85,6 @@ Package: kwin-common
 Architecture: any
 Depends: kwin-data (= ${source:Version}),
          libkf5globalaccel-bin,
-         libkwineffects12 (= ${binary:Version}),
          qml-module-org-kde-kquickcontrolsaddons,
          qml-module-qtmultimedia,
          ${misc:Depends},
@@ -156,7 +155,6 @@ Description: KDE window manager - devel files
 Package: kwin-wayland
 Architecture: any
 Depends: kwayland-integration (>= 5.14),
-         kwin-common (= ${binary:Version}),
          kwin-wayland-backend-drm (= ${binary:Version}) | kwin-wayland-backend-fbdev (= ${binary:Version}) | kwin-wayland-backend-x11 (= ${binary:Version}) | kwin-wayland-backend-virtual (= ${binary:Version}) | kwin-wayland-backend-wayland (= ${binary:Version}),
          libcap2-bin [linux-any],
          xwayland,
@@ -260,10 +258,7 @@ Description: KDE window manager x11 plugin
 
 Package: kwin-x11
 Architecture: any
-Depends: kwin-common (= ${binary:Version}),
-         libkwinglutils12 (= ${binary:Version}),
-         libkwinxrenderutils12 (= ${binary:Version}),
-         ${misc:Depends},
+Depends: ${misc:Depends},
          ${shlibs:Depends},
 Breaks: kwin-addons (<< 4:5.14)
 Provides: kwin, x-window-manager
@@ -281,8 +276,7 @@ Description: KDE window manager, X11 version
 Package: libkwin4-effect-builtins1
 Section: libs
 Architecture: any
-Depends: libkwineffects12 (= ${binary:Version}),
-         ${misc:Depends},
+Depends: ${misc:Depends},
          ${shlibs:Depends},
 Description: KDE window manager effect builtins library
  KWin (pronounced as one syllable "kwin") is the window
