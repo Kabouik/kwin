@@ -25,6 +25,10 @@ kwin (4:5.17.5-0r1) UNRELEASED; urgency=medium
       disable-MouseMark-and-TrackMouse-effects-loading-test.patch
   * Update install files.
   * Unregister old conffiles.
+  * Rename some packages according to new SONAMEs:
+    - libkwineffects11 -> libkwineffects12
+    - libkwinglutils11 -> libkwinglutils12
+    - libkwinxrenderutils11 -> libkwinxrenderutils12
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 12 Jan 2020 19:54:39 +0100
 
