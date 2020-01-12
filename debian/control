@@ -5,7 +5,7 @@ Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Maximiliano Curia <maxy@debian.org>
 Build-Depends: breeze-dev (>= 4:5.17~),
                cmake (>= 3.1~),
-               debhelper (>= 11~),
+               debhelper-compat (= 12),
                extra-cmake-modules (>= 5.38.0~),
                gettext,
                kinit-dev (>= 5.62.0~),
