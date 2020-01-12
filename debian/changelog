@@ -13,6 +13,8 @@ kwin (4:5.17.5-0r1) UNRELEASED; urgency=medium
     - add libxcb-util0-dev
     - explicitly add gettext
     - switch from the transitional libfreetype6-dev to libfreetype-dev
+  * Drop the migration from kwin-dbg, no more needed after two Debian stable
+    releases.
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 12 Jan 2020 19:54:39 +0100
 
