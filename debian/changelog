@@ -10,7 +10,7 @@ kwin (4:5.17.5-0r1) UNRELEASED; urgency=medium
   * New upstream release.
   * Update the build dependencies according to the upstream build system:
     - bump KF packages to 5.62.0
-    - bump breeze-dev, and kscreenlocker-dev to 5.17
+    - bump breeze-dev, kscreenlocker-dev, and libkdecorations2-dev to 5.17
     - add libxcb-util0-dev
     - explicitly add gettext
     - switch from the transitional libfreetype6-dev to libfreetype-dev
