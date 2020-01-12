@@ -1,13 +1,13 @@
-etc/xdg/aurorae.knsrc
-etc/xdg/kwin*.knsrc
-etc/xdg/org_kde_kwin.categories
 usr/lib/*/kconf_update_bin/kwin5_update_default_rules
 usr/lib/*/libexec/kwin*
-usr/lib/*/libexec/org_kde_kwin_xclipboard_syncer
+usr/lib/*/libkcmkwincommon.so.5
+usr/lib/*/libkcmkwincommon.so.5.*
 usr/lib/*/libkdeinit5_kwin_rules_dialog.so
 usr/lib/*/libkwin.so.5
 usr/lib/*/libkwin.so.5.*
 usr/lib/*/qt5/plugins/kcm_kwin*.so
+usr/lib/*/qt5/plugins/kcms/kcm_kwin*.so
+usr/lib/*/qt5/plugins/kf5/org.kde.kwindowsystem.platforms/KF5WindowSystemKWinPrivatePlugin.so
 usr/lib/*/qt5/plugins/kpackage/packagestructure/
 usr/lib/*/qt5/plugins/kwin*.so
 usr/lib/*/qt5/plugins/kwin/

@@ -23,6 +23,8 @@ kwin (4:5.17.5-0r1) UNRELEASED; urgency=medium
     - drop no more needed patches: Disable-testShadeWobblyWindows.patch,
       Ignore-cursor-weird-behaviour-under-a-containerized-xvfb.patch, and
       disable-MouseMark-and-TrackMouse-effects-loading-test.patch
+  * Update install files.
+  * Unregister old conffiles.
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 12 Jan 2020 19:54:39 +0100
 
