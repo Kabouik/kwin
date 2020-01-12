@@ -35,6 +35,7 @@ kwin (4:5.17.5-0r1) UNRELEASED; urgency=medium
   * Bump the debhelper compatibility to 12:
     - switch the debhelper build dependency to debhelper-compat 12
     - remove debian/compat
+  * Bump Standards-Version to 4.4.1, no changes required.
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 12 Jan 2020 19:54:39 +0100
 

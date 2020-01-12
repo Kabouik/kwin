@@ -76,7 +76,7 @@ Build-Depends: breeze-dev (>= 4:5.17~),
                qtdeclarative5-dev (>= 5.12.0~),
                qtscript5-dev (>= 5.12.0~),
                qttools5-dev (>= 5.12.0~),
-Standards-Version: 4.1.4
+Standards-Version: 4.4.1
 Homepage: https://projects.kde.org/projects/kde/workspace/kwin
 Vcs-Browser: https://salsa.debian.org/qt-kde-team/kde/kwin
 Vcs-Git: https://salsa.debian.org/qt-kde-team/kde/kwin.git
