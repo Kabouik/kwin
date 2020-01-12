@@ -107,6 +107,7 @@ Description: KDE window manager, common files
 
 Package: kwin-data
 Architecture: all
+Multi-Arch: foreign
 Depends: ${misc:Depends},
 Recommends: plasma-framework,
             qml-module-qtmultimedia,
