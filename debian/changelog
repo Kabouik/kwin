@@ -29,6 +29,7 @@ kwin (4:5.17.5-0r1) UNRELEASED; urgency=medium
     - libkwineffects11 -> libkwineffects12
     - libkwinglutils11 -> libkwinglutils12
     - libkwinxrenderutils11 -> libkwinxrenderutils12
+  * Update symbols files.
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 12 Jan 2020 19:54:39 +0100
 
