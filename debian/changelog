@@ -1,9 +1,12 @@
-kwin (4:5.16.5-1~) UNRELEASED; urgency=medium
+kwin (4:5.17.5-0r1) UNRELEASED; urgency=medium
 
   [ Maximiliano Curia ]
   * New upstream release (5.16.5).
   * Salsa CI automatic initialization by Tuco
   * Update build-deps and deps with the info from cmake
+
+  [ Pino Toscano ]
+  * New upstream release.
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 12 Jan 2020 19:54:39 +0100
 
