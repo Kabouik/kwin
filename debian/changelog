@@ -1,7 +1,8 @@
 kwin (4:5.17.5-0r1) UNRELEASED; urgency=medium
 
   [ Maximiliano Curia ]
-  * New upstream release (5.16.5).
+  * New upstream release (5.16.5):
+    - work better with NVIDIA drivers (Closes: #925528)
   * Salsa CI automatic initialization by Tuco
   * Update build-deps and deps with the info from cmake
 
