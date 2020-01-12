@@ -18,6 +18,11 @@ kwin (4:5.17.5-0r1) UNRELEASED; urgency=medium
   * Remove breaks/replaces for versions older than oldstable.
   * Pass -DBUILD_TESTING=OFF to cmake to disable the build of tests, as they
     are not run at build time anyway.
+  * Drop the 'testsuite' autopkgtest, as it does not test the installed
+    packages
+    - drop no more needed patches: Disable-testShadeWobblyWindows.patch,
+      Ignore-cursor-weird-behaviour-under-a-containerized-xvfb.patch, and
+      disable-MouseMark-and-TrackMouse-effects-loading-test.patch
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 12 Jan 2020 19:54:39 +0100
 
