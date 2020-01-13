@@ -3,11 +3,13 @@ kwin (4:5.17.5-0r1) UNRELEASED; urgency=medium
   [ Maximiliano Curia ]
   * New upstream release (5.16.5):
     - work better with NVIDIA drivers (Closes: #925528)
+    - properly restore the current desktop from session (Closes: #930538)
   * Salsa CI automatic initialization by Tuco
   * Update build-deps and deps with the info from cmake
 
   [ Pino Toscano ]
-  * New upstream release.
+  * New upstream release:
+    - add support for zwp_linux_dmabuf (Closes: #892204)
   * Update the build dependencies according to the upstream build system:
     - bump KF packages to 5.62.0
     - bump breeze-dev, kscreenlocker-dev, and libkdecorations2-dev to 5.17
