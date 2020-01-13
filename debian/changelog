@@ -1,4 +1,6 @@
-kwin (4:5.17.5-0r1) UNRELEASED; urgency=medium
+kwin (4:5.17.5-1) experimental; urgency=medium
+
+  * Team upload.
 
   [ Maximiliano Curia ]
   * New upstream release (5.16.5):
@@ -46,7 +48,7 @@ kwin (4:5.17.5-0r1) UNRELEASED; urgency=medium
   [ Helmut Grohne ]
   * Mark kwin-data Multi-Arch: foreign. (Closes: #893438)
 
- -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 12 Jan 2020 19:54:39 +0100
+ -- Pino Toscano <pino@debian.org>  Mon, 13 Jan 2020 06:45:42 +0100
 
 kwin (4:5.14.5-1) unstable; urgency=medium
 
