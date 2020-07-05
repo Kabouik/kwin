@@ -1,3 +1,9 @@
+kwin (4:5.17.5-2dpm1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Jonah Brüchert <jbb@kaidan.im>  Sun, 05 Jul 2020 15:10:46 +0200
+
 kwin (4:5.17.5-2) unstable; urgency=medium
 
   * Team upload.
