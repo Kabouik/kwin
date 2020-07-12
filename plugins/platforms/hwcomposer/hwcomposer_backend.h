@@ -30,6 +30,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // libhybris
 #include <hardware/hwcomposer.h>
 #include <hwcomposer_window.h>
+#include <hybris/hwc2/hwc2_compatibility_layer.h>
+#include <hybris/hwcomposerwindow/hwcomposer.h>
 // needed as hwcomposer_window.h includes EGL which on non-arm includes Xlib
 #include <fixx11h.h>
 
@@ -77,6 +79,10 @@ public:
     int refreshRate() const {
         return m_refreshRate;
     }
+    int deviceVersion() const {
+        return m_hwcVersion;
+    }
+
     void enableVSync(bool enable);
     void waitVSync();
     void wakeVSync();
@@ -92,6 +98,14 @@ public:
         return m_physicalSize;
     }
 
+    hwc2_compat_device_t *hwc2_device() const {
+        return m_hwc2device;
+    }
+
+    hwc2_compat_display_t *hwc2_display() const {
+        return m_hwc2_primary_display;
+    }
+
 Q_SIGNALS:
     void outputBlankChanged();
 
@@ -100,6 +114,8 @@ private Q_SLOTS:
     void screenBrightnessChanged(int brightness) {
         m_oldScreenBrightness = brightness;
     }
+
+    void hwc2_toggleBlankOutput();
 
 private:
     void initLights();
@@ -118,6 +134,12 @@ private:
     QWaitCondition m_vsyncWaitCondition;
     QScopedPointer<BacklightInputEventFilter> m_filter;
     QSizeF m_physicalSize;
+    
+    void RegisterCallbacks();
+
+    hwc2_compat_device_t *m_hwc2device = nullptr;
+    hwc2_compat_display_t* m_hwc2_primary_display = nullptr;
+    KWayland::Server::OutputInterface *hwc2_createOutput();
 };
 
 class HwcomposerWindow : public HWComposerNativeWindow
@@ -132,6 +154,10 @@ private:
     HwcomposerWindow(HwcomposerBackend *backend);
     HwcomposerBackend *m_backend;
     hwc_display_contents_1_t **m_list;
+
+    hwc2_compat_layer_t* m_hwc2_primary_layer = nullptr;
+    hwc2_compat_display_t *m_hwc2_primary_display = nullptr;
+    int lastPresentFence = -1;
 };
 
 class BacklightInputEventFilter : public InputEventFilter

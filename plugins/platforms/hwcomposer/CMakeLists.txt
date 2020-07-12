@@ -13,6 +13,7 @@ target_link_libraries(KWinWaylandHwcomposerBackend
     libhybris::hwcomposer
     libhybris::hybriseglplatform
     SceneOpenGLBackend
+    -lhwc2 -lsync
 )
 
 install(
